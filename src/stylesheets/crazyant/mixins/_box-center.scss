@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@mixin box-center($justify:center, $align:center) {
+    display:flex;
+
+    @if($align !=false) {
+        align-items: $align;
+    }
+    @if($justify !=false) {
+        justify-content: $pack;
+    }
+}
+
+/// ======================Use==================
+/// 元素垂直水平居中
+/// @param  {[string]} $justify      [center] 水平对齐方向,[false] 水平方向不设置
+/// @param  {[string]} $align      [center] 垂直对齐方向,[false] 垂直方向不设置
+/// @example
+/// 
+/// .justify-center {
+///     @include box-center;
+/// }
+/// 
+/// =======================Output================
+/// 
+/// .justify-cnter {
+///     display: flex;
+///     justify-content: center;
+///     align-items: center;
+/// }
+/// 
+/// ============================================

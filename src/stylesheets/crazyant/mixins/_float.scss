@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@mixin float($direction:left, $support-for-ie:false){
+	float: unquote($direction);
+	@if $support-for-ie{
+		_display: inline;
+	}
+}
+
+/// ======================Use==================
+/// .float-left{
+///   @include float(left, true);
+/// }
+
+/// =======================Output================
+/// .float-left {
+///   float: left;
+///   _display: inline;
+/// }
+/// ============================================

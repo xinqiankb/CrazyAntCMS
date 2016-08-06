@@ -1,0 +1,6 @@
+// Style
+// --------------------------------------------------
+
+.inline-block{
+  @include inline-block(top,true);
+}

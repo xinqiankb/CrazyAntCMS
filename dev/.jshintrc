@@ -1,0 +1,15 @@
+{
+  "asi"      : true,
+  "browser"  : true,
+  "eqeqeq"   : false,
+  "es3"      : true,
+  "expr"     : true,
+  "indent"   : true,
+  "jquery"   : true,
+  "latedef"  : "nofunc",    
+  "nonbsp"   : true,
+  "newcap"   : true,
+  "maxdepth" : 4,
+  "undef"    : true,
+  "unused"   : true
+}
